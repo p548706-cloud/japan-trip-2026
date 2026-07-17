@@ -1470,7 +1470,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
 .hb-day-header .date{font-size:9px;color:var(--muted);margin-top:2px}
 .hb-day-header .title{font-size:14px;font-weight:900;color:var(--navy);margin-bottom:3px}
 .hb-day-header .sub{font-size:11px;color:var(--muted)}
-</style>
+.hb-deep-hd .chev{font-size:12px;color:var(--rust);transition:transform .25s;display:inline-block;margin-left:7px}.hb-deep.open .chev{transform:rotate(180deg)}.hb-deep-photo{position:relative;height:165px;overflow:hidden;cursor:pointer}.hb-deep-photo img{width:100%;height:100%;object-fit:cover;display:block}.hb-deep-photo .hint{position:absolute;right:8px;bottom:8px;background:rgba(15,23,42,.75);color:#fff;font-size:10px;padding:3px 10px;border-radius:12px;pointer-events:none}.hb-deep .hb-deep-bd{display:none}.hb-deep.open .hb-deep-bd{display:block}.hb-gal{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:2px 0 6px}.hb-gal img{width:100%;height:110px;object-fit:cover;border-radius:8px;cursor:pointer}.hb-gal-cap{font-size:9.5px;color:var(--muted);text-align:right;margin-bottom:4px}</style>
 
   <div class="hb-hero">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Fuji_Kawaguchi_357.JPG/1280px-Fuji_Kawaguchi_357.JPG" alt="河口湖富士山" onerror="this.style.display='none'">
@@ -1484,7 +1484,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
   <!-- 序 -->
   <div class="hb-journal">
     <div class="jt">READ FIRST · 這本手冊怎麼用</div>
-    這一頁不是行程表——每天幾點去哪裡，請看「行程」分頁。這裡放的是<strong>出發前值得讀一遍的知識</strong>：每個景點背後的故事（知道了會看得更有味道）、車票怎麼買座位怎麼選、山上天氣怎麼穿、泡溫泉的規矩、帶娃的救急日語。行前翻一遍，路上就不用低頭查手機了。
+    這一頁不是行程表——每天幾點去哪裡，請看「行程」分頁。這裡放的是<strong>出發前值得讀一遍的知識</strong>：每個景點背後的故事（知道了會看得更有味道）、車票怎麼買座位怎麼選、山上天氣怎麼穿、泡溫泉的規矩、帶娃的救急日語。行前翻一遍，路上就不用低頭查手機了。<strong>每張景點卡都可以點開</strong>——照片先看個過癮，故事在裡面。
   </div>
 
   <!-- Weather -->
@@ -1507,7 +1507,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
   <div class="hb-sec-title">兩班車，一次搞懂</div>
   <div class="hb-divider"></div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">🚆 N'EX 成田特快搭乘攻略</span><span class="tg">交通重點</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">🚆 N'EX 成田特快搭乘攻略</span><span class="tg">交通重點</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Series-E259_NE018.jpg/1280px-Series-E259_NE018.jpg" alt="N'EX 成田特快搭乘攻略" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>N'EX是成田進東京市區最舒服的方式：全車指定席、每節車廂有大型行李架、82分鐘直達新宿不用換車——對帶兩個幼兒的我們來說，「不用換車」四個字值回票價。外國護照可買優惠去回票（去回合計¥5,200/人），回程票14天內有效，正好涵蓋整趟旅程。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>購票：</strong>抵達大廳的JR EAST Travel Service Center出示護照購買，同時把回程10/31的座位一起劃好，一勞永逸。</span></div>
@@ -1516,13 +1516,13 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
     </div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">🚃 富士迴遊（富士回遊）特急</span><span class="tg">全席指定・必先劃位</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">🚃 富士迴遊（富士回遊）特急</span><span class="tg">全席指定・必先劃位</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Series_E353-S102_Azusa-12.jpg/1280px-Series_E353-S102_Azusa-12.jpg" alt="富士迴遊（富士回遊）特急" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>2019年開通的直達特急，新宿一路開進河口湖，約1小時52分，中間不用拖著行李換車——這條路線以前得在大月站扛著推車轉乘登山電車，現在一班車搞定，帶小孩的家庭是最大受益者。列車只有3節車廂、全席指定，紅葉季一位難求，<strong>開賣（乘車日前一個月10:00）就要上えきねっと訂位</strong>。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>座位選擇：</strong>進入富士急線後留意左側車窗，富士山會慢慢從山谷間探出頭；富士山駅列車折返後改看右側。其實孩子最愛的是「電車折返」這件事本身。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>推車收折放最後排座位後方空間。上車前先讓孩子放電，車程近2小時，帶上貼紙書和小點心。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>JR Pass涵蓋大月以前路段，大月—河口湖的富士急路段與指定席費另計（合計約¥1,050–2,000/人依票種）。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/20100728_Kawaguchiko_Station_6622.jpg/1280px-20100728_Kawaguchiko_Station_6622.jpg" alt="富士迴遊（富士回遊）特急" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-highlight">📦 <strong>行李宅配小知識：</strong>在飯店櫃台就能辦ヤマト宅急便「空港宅急便」，行李隔天直送成田機場櫃台領取——帶兩個孩子＋伴手禮戰利品搭電車，這¥2,000是全旅程最值得的花費。前一晚20:00前委託最保險。</div>
 
@@ -1533,62 +1533,62 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
   <div class="hb-sec-title">知道了，看得更有味道</div>
   <div class="hb-divider"></div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">🍁 もみじ回廊（紅葉迴廊）</span><span class="tg">富士河口湖紅葉祭</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">🍁 もみじ回廊（紅葉迴廊）</span><span class="tg">富士河口湖紅葉祭</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Momiji_matsuri_2018a.jpg/1280px-Momiji_matsuri_2018a.jpg" alt="もみじ回廊（紅葉迴廊）" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>河口湖北岸一條約150公尺的溪畔小徑，兩側約60棵巨型楓樹枝枒在頭頂交握成隧道，10月下旬起整條走廊燒成橘紅色。這裡是「富士河口湖紅葉祭」的主會場，日落後點燈至21:30，燈光從樹下往上打，紅葉像著了火一樣透亮，倒映在小溪裡的畫面美得不真實。祭典期間沿路有暖呼呼的攤販：烤糰子、甘酒、熱狗——牽著孩子邊走邊吃，是整趟旅程氣氛最好的一晚。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>下午先走一遍「白天版」讓孩子撿楓葉（帶個小紙袋收集），日落（16:55前後）再回來看點燈版，一個景點兩種體驗。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>全程平坦推車無障礙，主會場有臨時洗手間。點燈後人多，幫孩子穿亮色外套避免走散。</span></div>
       <div class="hb-deep-row"><span class="ic">📸</span><span><strong>攝影：</strong>走廊盡頭的小石橋是經典機位，楓葉隧道＋溪流一次入鏡；點燈後手機開夜景模式靠在欄杆上拍最穩。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>入場免費。點燈後氣溫驟降到10°C以下，圍巾手套直接戴上再出門。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Momiji_matsuri_2018b.jpg/1280px-Momiji_matsuri_2018b.jpg" alt="もみじ回廊（紅葉迴廊）" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Momiji_matsuri_2018c.jpg/1280px-Momiji_matsuri_2018c.jpg" alt="もみじ回廊（紅葉迴廊）" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">⛩️ 新倉山淺間公園・忠靈塔</span><span class="tg">日本明信片 No.1</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">⛩️ 新倉山淺間公園・忠靈塔</span><span class="tg">日本明信片 No.1</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chureito_Pagoda_and_Mount_Fuji_20241022.jpg/1280px-Chureito_Pagoda_and_Mount_Fuji_20241022.jpg" alt="新倉山淺間公園・忠靈塔" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>紅色五重塔「忠靈塔」其實不是古蹟，而是1962年為紀念戰歿者而建的慰靈塔——但它站的位置實在太好了：塔、櫻（春）或紅葉（秋）、富士山，三個日本符號疊在同一條視線上。這個構圖被泰國攝影師po上網後爆紅，如今是海外遊客搜尋量最高的日本風景，各國旅遊雜誌的日本特輯封面幾乎都是這裡。展望台視野在爬完398段石階後豁然打開，富士山正面無遮擋，比照片震撼十倍。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>包車直接開到中腹停車場，從那裡爬398段「咲くや姫階段」石階約15–20分鐘。展望台不大，拍完經典構圖可以繞到塔後方看甲府盆地。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>石階陡且長，推車絕對上不去——小的用揹巾，大的牽手慢慢爬，爬完給個小獎勵。旁邊也有較緩的坡道可繞行，但距離更長。</span></div>
       <div class="hb-deep-row"><span class="ic">📸</span><span><strong>攝影：</strong>上午順光（富士山在西南方），紅葉季9點前人潮最少。展望台平台向右前傾30度是標準機位，手機廣角就能收下塔＋山。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>免費入場，停車場免費約90格。山上無商店，水和零食先帶上去。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Chureito_Pagoda_and_Mount_Fuji.jpg/1280px-Chureito_Pagoda_and_Mount_Fuji.jpg" alt="新倉山淺間公園・忠靈塔" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">💧 忍野八海</span><span class="tg">世界文化遺產</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">💧 忍野八海</span><span class="tg">世界文化遺產</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Oshino-Hakkai-Nakaike.jpg/1280px-Oshino-Hakkai-Nakaike.jpg" alt="忍野八海" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>富士山的雪融水滲入地底熔岩層，經過長達數十年的天然過濾，在忍野村湧出成八個清澈見底的泉池——這就是「忍野八海」，2013年以富士山信仰構成資產列入世界文化遺產。江戶時代的富士講朝聖者登山前會在此淨身，八個池各對應一位龍神。如今池水依然清得發藍，一公尺深看起來像三十公分，大鱒魚在池底悠悠游動，孩子趴在欄杆邊可以看上十分鐘不動。村內保留茅葺屋頂老宅與水車，配上背後的富士山，像走進日本昔話的插畫裡。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>八池中「湧池」水量最大最深藍、「鏡池」無風時倒映富士山。沿途攤販賣現烤糰子、草餅、烤玉米，邊走邊吃才是正確玩法。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>全村平坦石板路，推車暢行。池邊欄杆不高，幼兒靠近時大人一定牽好。有公共洗手間含尿布台。</span></div>
       <div class="hb-deep-row"><span class="ic">📸</span><span><strong>攝影：</strong>上午10點前光線斜射入池，水色最透。茅葺屋＋水車＋富士山的構圖在村子中段的橋上。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>外圍免費；中池區域為私人經營另收費（約¥500）。旅行團11點後大批湧入，我們反著走：先吃午餐、13:30後人潮稍退再逛。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg/1280px-231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg" alt="忍野八海" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/A_Water_Mill_at_Oshino_Hakkai_-_panoramio.jpg/1280px-A_Water_Mill_at_Oshino_Hakkai_-_panoramio.jpg" alt="忍野八海" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">🧊 鳴沢冰穴</span><span class="tg">天然紀念物</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">🧊 鳴沢冰穴</span><span class="tg">天然紀念物</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lighting-uped_Narusawa_Ice_Cave.jpg/1280px-Lighting-uped_Narusawa_Ice_Cave.jpg" alt="鳴沢冰穴" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>西元864年富士山側火山「長尾山」大噴發（貞觀大噴發），岩漿流過的地底留下一條環狀熔岩隧道——外層先冷卻凝固、內部岩漿流走，就成了這個總長153公尺的天然洞穴。洞內全年平均3°C、深處接近0°C，江戶時代人們在此貯冰，昭和初期甚至用來保存蠶卵，是名副其實的「天然冰箱」。走到最深處，燈光下的冰柱一年四季都在，孩子伸手摸到「夏天也不融化的冰」那一刻，比任何自然課都有說服力。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>環狀路線一圈約15–20分鐘，有樓梯下行，最低處「肩擠通道」高度僅91公分——大人要蹲著走，這段反而是孩子最得意的地方：只有他們能站直。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>推車禁入，小的揹巾、大的牽手。洞內石階濕滑，一定穿防滑鞋。洞內外溫差可達15°C，進洞前外套先穿好。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>大人¥350、小學生¥200、學齡前免費。害怕黑暗狹窄空間的孩子可能會怕，先跟他們預告「我們要去探險囉」。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Stairs_and_passage_towards_the_Narusawa_Hyoketsu_20161025.jpg/1280px-Stairs_and_passage_towards_the_Narusawa_Hyoketsu_20161025.jpg" alt="鳴沢冰穴" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">💦 白絲瀑布（白糸ノ滝）</span><span class="tg">世界遺產構成資產</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">💦 白絲瀑布（白糸ノ滝）</span><span class="tg">世界遺產構成資產</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/N2_Shiraito_Falls_2.jpg/1280px-N2_Shiraito_Falls_2.jpg" alt="白絲瀑布（白糸ノ滝）" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>大多數瀑布是一條河從崖上跌落，白絲瀑布不是——它是富士山的雪融伏流水，從一整面150公尺寬、20公尺高的弧形岩壁上「滲」出來的，數百條細流像絹絲垂簾一樣同時落下，日本人形容它「像掛了一整面白色的簾子」。這裡自古是富士講修行者的靈場，2013年與富士山一同列入世界遺產。秋天岩壁上方的樹林轉紅，紅葉與白絲交織，配上瀑布潭水的碧藍色，是整趟旅程色彩最豐富的一幕。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>從停車場沿步道下行約5–10分鐘到瀑布正面觀瀑台。回程順路看旁邊的「音止の滝」——傳說源賴朝在此密議，瀑布聲一度停止，故得名。</span></div>
       <div class="hb-deep-row"><span class="ic">👶</span><span><strong>親子：</strong>主步道整修良好可推車，最後觀瀑台前有段階梯，輪流抱下去即可。水氣大，幫孩子加件薄防水外套。</span></div>
       <div class="hb-deep-row"><span class="ic">📸</span><span><strong>攝影：</strong>上午順光且常出彩虹；用慢速快門（手機夜景模式也行）能把水流拍成真正的「絹絲」。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>瀑布免費，停車場約¥500。攤販區的鮎の塩焼き現點現烤約10分鐘，等待時間先幫孩子買個糰子。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Shiraito_Falls.jpg/1280px-Shiraito_Falls.jpg" alt="白絲瀑布（白糸ノ滝）" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
   <div class="hb-deep">
-    <div class="hb-deep-hd"><span class="nm">🌺 大石公園</span><span class="tg">湖北絕景步道</span></div>
+    <div class="hb-deep-hd" onclick="hbToggle(this)"><span class="nm">🌺 大石公園</span><span class="tg">湖北絕景步道</span><span class="chev">▾</span></div><div class="hb-deep-photo" onclick="hbToggle(this)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mount_Fuji_from_Oishi_Park.jpg/1280px-Mount_Fuji_from_Oishi_Park.jpg" alt="大石公園" loading="lazy"><div class="hint">📷 點擊展開故事與更多照片</div></div>
     <div class="hb-deep-bd">
       <p>河口湖北岸的湖畔花園，是攝影師公認拍富士山「湖景全構圖」的第一名機位：前景花田、中景湖面、背景富士山，一張照片三個層次。10月底的主角是圓滾滾的掃帚草（コキア）紅葉與芒草，順著350公尺的「花街道」慢慢走，每一步都是明信片。孩子在草地上跑，大人坐在長椅上看山——這裡不趕時間，是包車兩天裡最放鬆的收尾。</p>
       <div class="hb-deep-row"><span class="ic">🎯</span><span><strong>怎麼玩：</strong>花街道走一圈約30分，接著去園內「自然生活館」吃名物藍莓霜淇淋（河口湖是藍莓產地），商店的果醬是很體面的伴手禮。</span></div>
       <div class="hb-deep-row"><span class="ic">📸</span><span><strong>攝影：</strong>下午至傍晚逆富士機率最高；16:00後的斜陽會把山頂初雪染成粉金色，即「紅富士」的秋日版。</span></div>
       <div class="hb-deep-row"><span class="ic">💡</span><span><strong>提醒：</strong>全區免費，平坦推車友善，洗手間乾淨含尿布台——親子友善度滿分的景點。</span></div>
-    </div>
+    <div class="hb-gal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg/1280px-Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg" alt="大石公園" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg/1280px-Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg" alt="大石公園" loading="lazy" onclick="event.stopPropagation();window.open(this.src)"></div><div class="hb-gal-cap">照片來源：Wikimedia Commons・點小圖可放大</div></div>
   </div>
 
   <hr class="hb-hr">
@@ -1638,6 +1638,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--dark);min-heigh
     </div>
   </div>
 
+<script>function hbToggle(el){el.closest(".hb-deep").classList.toggle("open");}</script>
 </div><!-- end tab-handbook -->
 
 
